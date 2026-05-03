@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6AFC097F2FA810F700240833 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFC097E2FA810F700240833 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A3559A12FA6FEFC00F04BC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		6A3559932FA6FEFA00F04BC9 /* SnapQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3559A02FA6FEFC00F04BC9 /* SnapQuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapQuoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3559AA2FA6FEFC00F04BC9 /* SnapQuoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapQuoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFC097E2FA810F700240833 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFC097F2FA810F700240833 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,7 @@
 				6A3559952FA6FEFA00F04BC9 /* SnapQuote */,
 				6A3559A32FA6FEFC00F04BC9 /* SnapQuoteTests */,
 				6A3559AD2FA6FEFC00F04BC9 /* SnapQuoteUITests */,
+				6AFC097D2FA810F700240833 /* Frameworks */,
 				6A3559942FA6FEFA00F04BC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +97,14 @@
 				6A3559AA2FA6FEFC00F04BC9 /* SnapQuoteUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6AFC097D2FA810F700240833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFC097E2FA810F700240833 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapQuote/SnapQuote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
@@ -428,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapQuote/SnapQuote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
